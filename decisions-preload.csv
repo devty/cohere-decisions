@@ -1,0 +1,8 @@
+decision
+Finance will only accept NET30 payment terms.
+Finance will accept NET60 payment terms with a two year commitment.
+Engineering will only use pull requests to merge code.
+Product releases will be on the first Monday of every month.
+We store all company policies in Notion.
+We use Jira for all project management.
+All engineering work must have an associated ticket in Jira.
