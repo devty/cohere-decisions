@@ -55,8 +55,10 @@ input_type_embed = "search_document"
 for i in query:
     response = co.chat(message=i,
                        documents=decisions)
-    print(response)
-
+    with open('response.txt', 'a') as f:
+        f.write(f"Query: {response.message}\n")
+        f.write(f"Response: {response.text}\n")
+        f.write(f"Documents: {response.documents}\n\n####################\n\n")
     
 
 
