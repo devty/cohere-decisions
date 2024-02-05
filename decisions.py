@@ -23,13 +23,13 @@ co = cohere.Client(api_key=api_key)
 
 # Prepare our decisions
 decisions = [ 
-    {"department": "Finance", "decision":"Finance will only accept NET30 payment terms."},
-    {"department": "Finance","decision":"Finance will accept NET60 payment terms with a two year commitment."},
-    {"department": "Engineering","decision":"Engineering will only use pull requests to merge code."},
-    {"department": "Product","decision":"Product releases will be on the first Monday of every month."},
-    {"department": "Operations","decision":"We store all company policies in Notion."},
-    {"department": "Product","decision":"We use Jira for all project management."},
-    {"department": "Engineering","decision":"All engineering work must have an associated ticket in Jira."}
+    {"start_date":"01/01/2018","department":"Finance", "decision":"Finance will only accept NET30 payment terms."},
+    {"start_date":"01/01/2019","department":"Finance","decision":"Finance will accept NET60 payment terms with a two year commitment."},
+    {"start_date":"01/01/2020","department":"Engineering","decision":"Engineering will only use pull requests to merge code."},
+    {"start_date":"01/01/2023","department":"Product","decision":"Product releases will be on the first Monday of every month."},
+    {"start_date":"01/01/2022","department":"Operations","decision":"We store all company policies in Notion."},
+    {"start_date":"01/01/2021","department":"Product","decision":"We use Jira for all project management."},
+    {"start_date":"01/01/2020","department":"Engineering","decision":"All engineering work must have an associated ticket in Jira."}
 ]
 
 # We'll save this later

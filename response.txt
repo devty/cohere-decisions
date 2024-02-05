@@ -40,3 +40,47 @@ Documents: [{'decision': 'All engineering work must have an associated ticket in
 
 ####################
 
+Query: Can we accept NET120 payment terms?
+Response: Currently, we can accept up to NET60 payment terms. However, this depends on the department. For example, Finance will only accept NET30 payment terms, and Engineering will pull code merges using pull requests. To modify the terms for accepting payments, NET120 could be proposed to the Finance department for approval, possibly with a long-term commitment. 
+
+Let me know if you have any questions about our payment terms and conditions or any specific department approvals you may need.
+Documents: [{'decision': 'Finance will accept NET60 payment terms with a two year commitment.', 'department': 'Finance', 'id': 'doc_1', 'start_date': '01/01/2019'}, {'decision': 'Finance will only accept NET30 payment terms.', 'department': 'Finance', 'id': 'doc_0', 'start_date': '01/01/2018'}, {'decision': 'Engineering will only use pull requests to merge code.', 'department': 'Engineering', 'id': 'doc_2', 'start_date': '01/01/2020'}]
+
+####################
+
+Query: Do we accept NET60 payment terms?
+Response: This depends on the department. Finance only accepted NET30 payment terms as of 2018, but committed to NET60 payment terms for two years when they agreed to this change in 2019.
+Documents: [{'decision': 'Finance will only accept NET30 payment terms.', 'department': 'Finance', 'id': 'doc_0', 'start_date': '01/01/2018'}, {'decision': 'Finance will accept NET60 payment terms with a two year commitment.', 'department': 'Finance', 'id': 'doc_1', 'start_date': '01/01/2019'}]
+
+####################
+
+Query: Can I just merge this into master?
+Response: In order to successfully merge code, Engineering requires that you submit a pull request. Therefore, you cannot merge code straight into the master branch.
+Documents: [{'decision': 'Engineering will only use pull requests to merge code.', 'department': 'Engineering', 'id': 'doc_2', 'start_date': '01/01/2020'}]
+
+####################
+
+Query: Let's store that as a policy.
+Response: Great, we'll make a note of that! Since 2022, all company policies have been stored in Notion, so I will make sure that this new policy is recorded there.
+Documents: [{'decision': 'We store all company policies in Notion.', 'department': 'Operations', 'id': 'doc_4', 'start_date': '01/01/2022'}]
+
+####################
+
+Query: I can't find my project.
+Response: I'm sorry to hear that you've lost track of your project. Fortunately, there are several steps you can take to find it again.
+
+First, you could check with your colleagues to see if someone else took over the project. Secondly, it would be worth checking your emails to see if there are any clues in the communications about the project. Thirdly, you could search through old meeting invitations and notes to see if there is any mention of it. If it was a large project, someone else may be able to shed light on where it was moved to. Finally, in order to prevent this situation in the future, you could create a systematic document naming protocol, or frequently back up your projects in multiple places.
+
+I hope this helps, and best of luck in finding it!
+Documents: None
+
+####################
+
+Query: Going to get started on this work without a ticket.
+Response: You recently made a decision that all engineering work must have an associated ticket in Jira.
+
+Therefore, if you are getting started on engineering work you need a ticket in Jira.
+Documents: [{'decision': 'All engineering work must have an associated ticket in Jira.', 'department': 'Engineering', 'id': 'doc_6', 'start_date': '01/01/2020'}]
+
+####################
+
