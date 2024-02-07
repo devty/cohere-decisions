@@ -1,22 +1,15 @@
-import cohere
-import numpy as np
-import re
-import pandas as pd
-from tqdm import tqdm
-from datasets import load_dataset
-import umap
-import altair as alt
-from sklearn.metrics.pairwise import cosine_similarity
-from annoy import AnnoyIndex
-import warnings
 import os
+import re
+import warnings
+
+import cohere
 from dotenv import load_dotenv
 
 load_dotenv()
 
 api_key = os.getenv("COHERE_APP_API_KEY")
 warnings.filterwarnings('ignore')
-pd.set_option('display.max_colwidth', None)
+
 
 # Now we'll set up the cohere client.
 co = cohere.Client(api_key=api_key)
